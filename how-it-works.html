@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How IsItfreemoney works and which TikTok features it uses</title>
+<meta name="description" content="How the IsItfreemoney desktop app signs in with TikTok Login Kit and posts the owner's own videos with the TikTok Content Posting API.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="brand" href="index.html"><img src="app-icon.png" alt="IsItfreemoney app icon">IsItfreemoney</a>
+  <nav><a href="index.html">Home</a><a class="here" href="how-it-works.html">How it works</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="contact.html">Contact</a></nav>
+</div></header>
+<main>
+  <h1>How it works</h1>
+  <p class="lead">IsItfreemoney is a Windows desktop program with a small page that opens in the owner's web browser on their own computer. This page explains each part and which TikTok features it relies on.</p>
+
+  <h2>TikTok features used</h2>
+  <table>
+    <tr><th>Feature</th><th>Permission</th><th>What it is used for</th></tr>
+    <tr><td>Login Kit</td><td><code>user.info.basic</code></td><td>Signs the owner in and shows the account name and username the video will be posted to.</td></tr>
+    <tr><td>Content Posting API, Direct Post</td><td><code>video.publish</code></td><td>Posts the owner's chosen video to the owner's account after the owner has set the privacy and interaction options and pressed Post.</td></tr>
+    <tr><td>Content Posting API, Upload</td><td><code>video.upload</code></td><td>Sends a video to the owner's TikTok inbox as a draft, to be finished in the TikTok app.</td></tr>
+  </table>
+
+  <h2>What the posting screen shows</h2>
+  <ul>
+    <li>The nickname and username of the TikTok account that will receive the video, read from TikTok before every post.</li>
+    <li>A preview of the selected video, and an editable caption field.</li>
+    <li>A "Who can view this video" list that offers only the options TikTok returns for the account, with <b>no default</b> value.</li>
+    <li>Comment, Duet and Stitch switches that start <b>off</b>, and that are disabled when the account's own TikTok settings turn them off.</li>
+    <li>A commercial-content switch that starts <b>off</b>. When it is on, the owner must pick "Your brand" and/or "Branded content", and the app prevents a private post when Branded content is selected.</li>
+    <li>A consent line linking to TikTok's Music Usage Confirmation (and the Branded Content Policy), which must be ticked before the Post button works.</li>
+  </ul>
+
+  <h2>What happens when the owner presses Post</h2>
+  <div class="step"><div class="n">1</div><div>The app asks TikTok to start a post with the owner's chosen settings.</div></div>
+  <div class="step"><div class="n">2</div><div>The video file is uploaded directly from the owner's computer to TikTok.</div></div>
+  <div class="step"><div class="n">3</div><div>The app checks TikTok's status for the post and shows the result (for example "publish complete" or an error), so the owner always knows what happened.</div></div>
+  <p class="note">Nothing is sent to TikTok before the owner presses Post or Send as draft. The app never adds a watermark, logo or promotional text to a video.</p>
+
+  <h2>Where the data goes</h2>
+  <p>The TikTok access token is saved only on the owner's computer. Videos go only from the owner's computer to TikTok. The app has no server of its own, no analytics and no advertising. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Limits</h2>
+  <ul>
+    <li>The app is used by one owner for one TikTok account.</li>
+    <li>It follows TikTok's rules for apps that have not yet been audited: posts are limited to the visibility TikTok allows.</li>
+    <li>It follows TikTok's Terms of Service, Community Guidelines and Branded Content Policy, and the owner is responsible for what is posted (see the <a href="terms.html">Terms of Service</a>).</li>
+  </ul>
+</main>
+<footer class="site"><div class="in">
+  <span>&copy; 2026 IsItfreemoney</span>
+  <a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="contact.html">Contact</a>
+  <span class="sp">Not affiliated with or endorsed by TikTok.</span>
+</div></footer>
+</body>
+</html>

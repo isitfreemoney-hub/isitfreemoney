@@ -1,0 +1,30 @@
+:root { --bg:#14141a; --card:#1e1e27; --text:#f2f2f5; --muted:#a9a9b8; --accent:#ffd60a; --line:#2e2e3a; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+a { color:var(--accent); }
+header.site { border-bottom:1px solid var(--line); background:#101015; }
+header.site .in { max-width:960px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+header.site .brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:20px; color:var(--text); text-decoration:none; }
+header.site .brand img { width:38px; height:38px; border-radius:9px; }
+header.site nav { margin-left:auto; display:flex; gap:18px; flex-wrap:wrap; }
+header.site nav a { color:var(--muted); text-decoration:none; font-size:16px; }
+header.site nav a:hover, header.site nav a.here { color:var(--accent); }
+main { max-width:960px; margin:0 auto; padding:34px 20px 20px; }
+h1 { font-size:34px; line-height:1.2; margin:0 0 12px; }
+h2 { font-size:24px; margin:38px 0 10px; }
+h3 { font-size:19px; margin:20px 0 6px; }
+p.lead { font-size:19px; color:var(--muted); max-width:720px; }
+.hero { display:flex; gap:28px; align-items:center; flex-wrap:wrap; margin-bottom:10px; }
+.hero img { width:120px; height:120px; border-radius:26px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin:16px 0; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; }
+.card h3 { margin-top:0; }
+.step { display:flex; gap:14px; margin:14px 0; }
+.step .n { flex:none; width:34px; height:34px; border-radius:50%; background:var(--accent); color:#14141a; font-weight:800; display:flex; align-items:center; justify-content:center; }
+table { border-collapse:collapse; width:100%; margin:12px 0; }
+th, td { text-align:left; border-bottom:1px solid var(--line); padding:9px 10px; vertical-align:top; }
+th { color:var(--muted); font-weight:600; }
+footer.site { border-top:1px solid var(--line); margin-top:50px; padding:24px 20px 40px; color:var(--muted); font-size:15px; }
+footer.site .in { max-width:960px; margin:0 auto; display:flex; gap:22px; flex-wrap:wrap; align-items:center; }
+footer.site .in span.sp { margin-left:auto; }
+.note { color:var(--muted); font-size:15px; }
